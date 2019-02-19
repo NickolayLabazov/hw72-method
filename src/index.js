@@ -1,4 +1,5 @@
-import Character from './function';
+import { Undead } from './function';
 
-const hero = new Character('Undead');
-console.log(hero);
+const undead = new Undead();
+undead.levelUp();
+console.log(undead);
