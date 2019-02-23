@@ -5,10 +5,12 @@ export class Character {
   }
 
   levelUp() {
-    this.level += 1;
-    this.health = 100;
-    this.attack = this.attack * 1.2;
-    this.defence = this.defence * 1.2;
+    if (this.health > 0) {
+      this.level += 1;
+      this.health = 100;
+      this.attack = this.attack * 1.2;
+      this.defence = this.defence * 1.2;
+    }
   }
 }
 
